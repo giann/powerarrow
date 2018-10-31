@@ -4,3 +4,6 @@
 [submodule "couth"]
 	path = couth
 	url = https://github.com/gorlowski/couth
+[submodule "blingbling"]
+	path = blingbling
+	url = https://github.com/cedlemo/blingbling
