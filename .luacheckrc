@@ -7,23 +7,24 @@ ignore = {
 }
 
 globals = {
-    "awful",
     "awesome",
-    "naughty",
+    "awful",
     "beautiful",
-    "terminal",
-    "editor",
-    "couth",
-    "screen",
-    "image",
-    "widget",
-    "client",
-    "instance",
     "blingbling",
-    "vicious",
-    "timer",
-    "root",
+    "client",
+    "clientkeys",
+    "couth",
+    "editor",
     "globalkeys",
+    "image",
+    "instance",
     "mouse",
-    "clientkeys"
+    "naughty",
+    "root",
+    "screen",
+    "terminal",
+    "themes_dir",
+    "timer",
+    "vicious",
+    "widget"
 }

@@ -2,17 +2,17 @@
 --{{  Awesome Powerarrow theme by Rom Ockee - based on Awesome Zenburn and Need_Aspirin themes }}---
     --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-green = "#7fb219"
-cyan  = "#7f4de6"
-red   = "#e04613"
-lblue = "#6c9eab"
-dblue = "#00ccff"
-black = "#3f3f3f"
-lgrey = "#d2d2d2"
-dgrey = "#333333"
-white = "#ffffff"
+local green = "#7fb219"
+local cyan  = "#7f4de6"
+local red   = "#e04613"
+local lblue = "#6c9eab"
+local dblue = "#00ccff"
+local black = "#3f3f3f"
+local lgrey = "#d2d2d2"
+local dgrey = "#333333"
+local white = "#ffffff"
 
-theme = {}
+local theme = {}
 
 theme.wallpaper_cmd = { "awsetbg /home/rom/.config/awesome/themes/powerarrow/wallpapers/wallpaper-2552963.jpg" }
 
@@ -32,11 +32,11 @@ theme.titlebar_bg_normal                    = "#3F3F3F"
 theme.binclock_bg                           = "#777e76"
 theme.binclock_fga                          = "#CCCCCC"
 theme.binclock_fgi                          = "#444444"
--- theme.taglist_bg_focus                      = black 
+-- theme.taglist_bg_focus                      = black
 theme.taglist_fg_focus                      = dblue
-theme.tasklist_bg_focus                     = "#222222" 
+theme.tasklist_bg_focus                     = "#222222"
 theme.tasklist_fg_focus                     = dblue
-theme.textbox_widget_as_label_font_color    = white 
+theme.textbox_widget_as_label_font_color    = white
 theme.textbox_widget_margin_top             = 1
 theme.text_font_color_1                     = green
 theme.text_font_color_2                     = dblue

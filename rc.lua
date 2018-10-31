@@ -105,131 +105,13 @@ local myawesomemenu = {
     {"quit",                  awesome.quit }
 }
 
-local docsmenu = {
-    {" C",                    "/home/rom/Tools/doc_c", beautiful.c_icon},
-    {" JavaScript",           "/home/rom/Tools/doc_js", beautiful.js_icon},
-    {" Ruby",                 "/home/rom/Tools/doc_ruby", beautiful.ruby_icon} 
-}
-
-local learningmenu = {
-    {" C",                    "/home/rom/Books/C.sh", beautiful.c_icon},
-    {" JavaScript",           "/home/rom/Books/JavaScrip.sh", beautiful.js_icon},
-    {" Ruby On Rails",        "/home/rom/Books/RubyOnRails.sh", beautiful.ruby_icon}
-}
-
-local mybooksmenu = {
-    {" Documentation",        docsmenu, beautiful.docsmenu_icon},
-    {" Learning",             learningmenu, beautiful.learning_icon},
-    {"                                                            "}, 
-    {" Assembler",            fm .. " ~/Books/Assembler/", beautiful.assembler_icon},
-    {" C",                    fm .. " ~/Books/C/", beautiful.c_icon},
-    {" C++",                  fm .. " ~/Books/C++/", beautiful.cpp_icon},
-    {" D",                    fm .. " ~/Books/D/", beautiful.dlang_icon},
-    {" Databases",            fm .. " ~/Books/Databases/", beautiful.databases_icon},
-    {" Erlang",               fm .. " ~/Books/Erlang/", beautiful.erlang_icon},
-    {" Java",                 fm .. " ~/Books/Java/", beautiful.java_icon},
-    {" JavaScript",           fm .. " ~/Books/JavaScript/", beautiful.js_icon},
-    {" Linux",                fm .. " ~/Books/Linux/", beautiful.linux_icon},
-    {" Markup",               fm .. " ~/Books/HTML-CSS-XML/", beautiful.markup_icon},
-    {" Misc",                 fm .. " ~/Books/Misc/"},
-    {" Mobile Apps",          fm .. " ~/Books/Mobile-Apps/", beautiful.androidmobile_icon},
-    {" Objective-C",          fm .. " ~/Books/Objective-C/"},
-    {" Python",               fm .. " ~/Books/Python/", beautiful.py_icon},
-    {" Regexp",               fm .. " ~/Books/Regexp/"},
-    {" Ruby",                 fm .. " ~/Books/Ruby/", beautiful.ruby_icon},
-    {" VCS",                  fm .. " ~/Books/VCS"}
-}
-
-local myedumenu = {
-    {" Anki",                 "anki", beautiful.anki_icon},
-  -- {" Celestia",             "celestia", beautiful.celestia_icon},
-  -- {" Geogebra",             "geogebra", beautiful.geogebra_icon},
-    {" CherryTree",           "cherrytree", beautiful.cherrytree_icon},
-    {" Free42dec",            "/home/rom/Tools/Free42Linux/gtk/free42dec", beautiful.free42_icon},
-    {" GoldenDict",           "goldendict", beautiful.goldendict_icon},
-    {" Qalculate",            "qalculate-gtk", beautiful.qalculate_icon},
-    {" Stellarium",           "stellarium", beautiful.stellarium_icon},
-    {" Vym",                  "vym", beautiful.vym_icon},
-    {" Wolfram Mathematica",  "/home/rom/Tools/Wolfram/Mathematica", beautiful.mathematica_icon},
-    {" XMind",                "xmind", beautiful.xmind_icon}
-}
-
 local mydevmenu = {
-    {" Android SDK Updater",  "android", beautiful.android_icon},
-    {" Eclipse",              "/home/rom/Tools/eclipse/eclipse", beautiful.eclipse_icon},
     {" Emacs",                "emacs", beautiful.emacs_icon},
-    {" GHex",                 "ghex", beautiful.ghex_icon},	
-    {" IntellijIDEA",         "/home/rom/Tools/idea-IU-123.72/bin/idea.sh", beautiful.ideaUE_icon},
-    {" Kdiff3",               "kdiff3", beautiful.kdiff3_icon},
-    {" Meld",                 "meld", beautiful.meld_icon},
-    {" pgAdmin",              "pgadmin3", beautiful.pgadmin3_icon},
-    {" Qt Creator",           "qtcreator", beautiful.qtcreator_icon},
-    {" RubyMine",             "/home/rom/Tools/rubymine.run", beautiful.rubymine_icon},
-    {" SublimeText",          "sublime_text", beautiful.sublime_icon},
-    {" Tkdiff",               "tkdiff", beautiful.tkdiff_icon}
-}
-
-local mygraphicsmenu = {
-    {" Character Map",        "gucharmap", beautiful.gucharmap_icon},
-    {" Fonty Python",         "fontypython", beautiful.fontypython_icon},
-    {" gcolor2",              "gcolor2", beautiful.gcolor_icon},
-    {" Gpick",                "gpick", beautiful.gpick_icon},
-    {" Gimp",                 "gimp", beautiful.gimp_icon},
-    {" Inkscape",             "inkscape", beautiful.inkscape_icon},
-    {" recordMyDesktop",      "gtk-recordMyDesktop", beautiful.recordmydesktop_icon},
-    {" Screengrab",           "screengrab", beautiful.screengrab_icon},
-    {" Xmag",                 "xmag", beautiful.xmag_icon},
-    {" XnView",               "/home/rom/Tools/XnView/xnview.sh", beautiful.xnview_icon}
-}
-
-local mymultimediamenu = {
-    {" Audacious",            "audacious", beautiful.audacious_icon},
-    {" DeadBeef",             "deadbeef", beautiful.deadbeef_icon},
-    {" UMPlayer",             "umplayer", beautiful.umplayer_icon},
-    {" VLC",                  "vlc", beautiful.vlc_icon}
-}
-
-local myofficemenu = {
-    {" Acrobat Reader",       "acroread", beautiful.acroread_icon},
-    {" DjView",               "djview", beautiful.djview_icon},
-    {" KChmViewer",           "kchmviewer", beautiful.kchmviewer_icon},
-    {" Leafpad",              "leafpad", beautiful.leafpad_icon},
-    {" LibreOffice Base",     "libreoffice --base", beautiful.librebase_icon},
-    {" LibreOffice Calc",     "libreoffice --calc", beautiful.librecalc_icon},
-    {" LibreOffice Draw",     "libreoffice --draw", beautiful.libredraw_icon},
-    {" LibreOffice Impress",  "libreoffice --impress", beautiful.libreimpress_icon},
-    {" LibreOffice Math",     "libreoffice --math", beautiful.libremath_icon},	
-    {" LibreOffice Writer",   "libreoffice --writer", beautiful.librewriter_icon},
-    {" Qpdfview",             "qpdfview", beautiful.qpdfview_icon},
-    {" ScanTailor",           "scantailor", beautiful.scantailor_icon},
-    {" Sigil",                "sigil", beautiful.sigil_icon}, 
-    {" TeXworks",             "texworks", beautiful.texworks_icon}
-}
-
-local mywebmenu = {
-    {" Chromium",             "chromium-browser", beautiful.chromium_icon},
-    {" Droppox",              "dropbox", beautiful.dropbox_icon},
-    {" Dwb",                  "dwb", beautiful.dwb_icon},
-    {" Filezilla",            "filezilla", beautiful.filezilla_icon},
-    {" Firefox",              "firefox", beautiful.firefox_icon},
-    {" Gajim",                "gajim", beautiful.gajim_icon},
-    {" QuiteRSS",             "quiterss", beautiful.quiterss_icon},
-    {" Luakit",               "luakit", beautiful.luakit_icon},
-    {" Opera",                "opera", beautiful.opera_icon},
-    {" Qbittorrent",          "qbittorrent", beautiful.qbittorrent_icon},
-    {" Skype",                "skype", beautiful.skype_icon},
-    {" Tor",                  "/home/rom/Tools/tor-browser_en-US/start-tor-browser", beautiful.vidalia_icon},
-    {" Thunderbird",          "thunderbird", beautiful.thunderbird_icon},
-    {" Weechat",              "lilyterm -x weechat-curses", beautiful.weechat_icon}
+    {" SublimeText",          "sublime_text", beautiful.sublime_icon}
 }
 
 local mysettingsmenu = {
-    {" CUPS Settings",        "sudo system-config-printer", beautiful.cups_icon},
-    {" JDK6 Settings",        "/opt/sun-jdk-1.6.0.37/bin/ControlPanel", beautiful.java_icon},
-    {" JDK7 Settings",        "/opt/oracle-jdk-bin-1.7.0.9/bin/ControlPanel", beautiful.java_icon},
-    {" Nvidia Settings",      "sudo nvidia-settings", beautiful.nvidia_icon},
-    {" Qt Configuration",     "qtconfig", beautiful.qt_icon},
-    {" WICD",                 terminal .. " -x wicd-curses", beautiful.wicd_icon}
+    {" Nvidia Settings",      "sudo nvidia-settings", beautiful.nvidia_icon}
 }
 
 local mytoolsmenu = {
@@ -247,14 +129,8 @@ local mymainmenu = awful.menu(
     {
         items = {
             {" @wesome",        myawesomemenu,          beautiful.awesome_icon },
-            {" books",          mybooksmenu,            beautiful.books_icon },
             {" development",    mydevmenu,              beautiful.mydevmenu_icon },
-            {" education",      myedumenu,              beautiful.myedu_icon },
-            {" graphics",       mygraphicsmenu,         beautiful.mygraphicsmenu_icon },
-            {" multimedia",     mymultimediamenu,       beautiful.mymultimediamenu_icon },
-            {" office",         myofficemenu,           beautiful.myofficemenu_icon },
             {" tools",          mytoolsmenu,            beautiful.mytoolsmenu_icon },
-            {" web",            mywebmenu,              beautiful.mywebmenu_icon },
             {" settings",       mysettingsmenu,         beautiful.mysettingsmenu_icon },
             {" calc",           "/usr/bin/gcalctool",   beautiful.galculator_icon },
             {" htop",           terminal .. " -x htop", beautiful.htop_icon },
@@ -770,21 +646,35 @@ root.keys(globalkeys)
 --{{---| Rules |------------------------------------------------------------------------------------
 
 awful.rules.rules = {
-    { rule = { },
-    properties = { size_hints_honor = false,
-    border_width = beautiful.border_width,
-    border_color = beautiful.border_normal,
-    focus = true,
-    keys = clientkeys,
-    buttons = clientbuttons } },
-    { rule = { class = "goldendict" },
-    properties = { floating = true } },
-    { rule = { class = "audacious" },
-    properties = { floating = true } },
-    { rule = { class = "xwinmosaic" },
-    properties = { floating = true } },
-    { rule = { class = "gimp" },
-    properties = { floating = true } },
+    {
+        rule = {},
+        properties = {
+            size_hints_honor = false,
+            border_width = beautiful.border_width,
+            border_color = beautiful.border_normal,
+            focus = true,
+            keys = clientkeys,
+            buttons = clientbuttons
+        }
+    },
+    {
+        rule = {
+            class = "goldendict"
+        },
+        properties = { floating = true }
+    },
+    {
+        rule = { class = "audacious" },
+        properties = { floating = true }
+    },
+    {
+        rule = { class = "xwinmosaic" },
+        properties = { floating = true }
+    },
+    {
+        rule = { class = "gimp" },
+        properties = { floating = true }
+    },
 }
 
 --{{---| Signals |----------------------------------------------------------------------------------
@@ -819,8 +709,12 @@ local function run_once(prg)
 
 --{{---| run_once with args |-----------------------------------------------------------------------
 
-local function run_oncewa(prg) if not prg then do return nil end end
-    awful.util.spawn_with_shell('ps ux | grep -v grep | grep -F ' .. prg .. ' || ' .. prg .. ' &') end
+local function run_oncewa(prg)
+    if not prg then
+        return nil
+    end
+    awful.util.spawn_with_shell('ps ux | grep -v grep | grep -F ' .. prg .. ' || ' .. prg .. ' &')
+end
 
 --{{--| Autostart |---------------------------------------------------------------------------------
 
